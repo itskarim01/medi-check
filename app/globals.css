@@ -58,37 +58,37 @@
     --spacing-margin-mobile: 16px;
     --spacing-margin-desktop: 48px;
 
-    --font-family-sans: "Inter", sans-serif;
+    --font-sans: "Inter", sans-serif;
 
-    --font-size-body-lg: 18px;
-    --line-height-body-lg: 28px;
+    --text-body-lg: 18px;
+    --leading-body-lg: 28px;
     --font-weight-body-lg: 400;
 
-    --font-size-label-bold: 14px;
-    --line-height-label-bold: 20px;
-    --letter-spacing-label-bold: 0.01em;
+    --text-label-bold: 14px;
+    --leading-label-bold: 20px;
+    --tracking-label-bold: 0.01em;
     --font-weight-label-bold: 600;
 
-    --font-size-headline-lg-mobile: 24px;
-    --line-height-headline-lg-mobile: 32px;
-    --letter-spacing-headline-lg-mobile: -0.01em;
+    --text-headline-lg-mobile: 24px;
+    --leading-headline-lg-mobile: 32px;
+    --tracking-headline-lg-mobile: -0.01em;
     --font-weight-headline-lg-mobile: 700;
 
-    --font-size-label-sm: 12px;
-    --line-height-label-sm: 16px;
+    --text-label-sm: 12px;
+    --leading-label-sm: 16px;
     --font-weight-label-sm: 500;
 
-    --font-size-headline-lg: 32px;
-    --line-height-headline-lg: 40px;
-    --letter-spacing-headline-lg: -0.02em;
+    --text-headline-lg: 32px;
+    --leading-headline-lg: 40px;
+    --tracking-headline-lg: -0.02em;
     --font-weight-headline-lg: 700;
 
-    --font-size-headline-md: 20px;
-    --line-height-headline-md: 28px;
+    --text-headline-md: 20px;
+    --leading-headline-md: 28px;
     --font-weight-headline-md: 600;
 
-    --font-size-body-md: 16px;
-    --line-height-body-md: 24px;
+    --text-body-md: 16px;
+    --leading-body-md: 24px;
     --font-weight-body-md: 400;
 }
 
