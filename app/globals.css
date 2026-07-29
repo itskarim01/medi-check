@@ -1,11 +1,9 @@
-@layer theme, base, components, utilities;
 @import "tailwindcss";
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/utilities.css" layer(utilities) important;
 
 @theme { 
     --color-surface-container-high: oklch(0.932 0.032 255.6);
     --color-on-surface: oklch(0.210 0.034 263.4);
+    --color-on-surface-variant: oklch(0.470 0.020 263.4);
     --color-primary-container: oklch(0.488 0.243 264.4);
     --color-inverse-on-surface: oklch(0.962 0.018 272.3);
     --color-on-error: oklch(1.000 0.000 0.0);

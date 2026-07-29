@@ -6,7 +6,7 @@ export default function Home() {
       {/* Header & Navbar */}
       <header className="bg-surface border-b border-outline-variant sticky top-0 z-50">
         <nav className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-300 mx-auto">
-          <div className="font-weight-headline-md text-headline-md text-xl text-primary">MediCheck</div>
+          <div className="font-headline-md text-headline-md text-primary">MediCheck</div>
           <div className="hidden md:flex items-center gap-xl">
             <a className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#features">Features</a>
             <a className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#how-it-works">How it Works</a>
@@ -23,7 +23,7 @@ export default function Home() {
       <section className="relative overflow-hidden clinical-gradient -mt-22 py-20 md:py-32">
         <div className="max-w-300 mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 items-center gap-xl">
           <div className="z-10 text-center lg:text-left">
-            <h1 className="font-headline-lg text-headline-lg md:text-5xl font-weight-headline-lg lg:text-6xl mb-md text-on-surface leading-tight">
+            <h1 className="font-headline-lg text-headline-lg md:text-5xl lg:text-6xl mb-md text-on-surface leading-tight">
               Stay on track with your health
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-xl mx-auto lg:mx-0">
