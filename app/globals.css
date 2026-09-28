@@ -31,7 +31,7 @@
     --color-tertiary-fixed-dim: oklch(0.834 0.126 67.2);
     --color-secondary-fixed: oklch(0.911 0.096 180.1);
     --color-error-container: oklch(0.936 0.032 17.7);
-    --color-surface-container-low: oklch(0.936 0.032 17.7);
+    --color-surface-container-low: oklch(0.967 0.016 267.6);
     --color-primary: oklch(0.380 0.145 265.5)     ;
     --color-outline-variant: oklch(0.872 0.011 261.8);
     --color-tertiary: oklch(0.422 0.095 57.9);
@@ -89,6 +89,8 @@
     --leading-body-md: 24px;
     --font-weight-body-md: 400;
 }
+
+html{ scroll-behavior: smooth; }
 
 a, button{
     cursor: pointer;

@@ -1,4 +1,5 @@
 import {ArrowRight, Bell, Users, ShieldHalf, UserPlus, Quote, CheckCircle} from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,14 +14,18 @@ export default function Home() {
             <a className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Support</a>
           </div>
           <div className="flex items-center gap-md">
-            <button className="hidden sm:block font-body-md text-body-md text-primary hover:opacity-80 transition-all">Sign In</button>
-            <button className="bg-primary text-on-primary px-lg py-sm rounded-lg font-label-bold hover:opacity-90 transition-all">Get Started</button>
+            <Link href="/login">
+              <button className="hidden sm:block font-body-md text-body-md text-primary hover:opacity-80 transition-all">Sign In</button>
+            </Link>
+            <Link href="/register">
+              <button className="bg-primary text-on-primary px-lg py-sm rounded-lg font-label-bold hover:opacity-90 transition-all">Get Started</button>
+            </Link>
           </div>
         </nav>
       </header>
       
       {/* HERO */}
-      <section className="relative overflow-hidden clinical-gradient -mt-22 py-20 md:py-32">
+      <section className="relative overflow-hidden clinical-gradient py-20 md:py-32">
         <div className="max-w-300 mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 items-center gap-xl">
           <div className="z-10 text-center lg:text-left">
             <h1 className="font-headline-lg text-headline-lg md:text-5xl lg:text-6xl mb-md text-on-surface leading-tight">
@@ -30,13 +35,17 @@ export default function Home() {
               Never miss a dose again. Our intelligent tracking system ensures your treatment plan stays organized, manageable, and precise.
             </p>
             <div className="flex flex-col sm:flex-row gap-md justify-center lg:justify-start">
-              <button className="bg-primary text-on-primary px-xl py-md rounded-lg font-headline-md flex items-center justify-center gap-sm hover:opacity-90 transition-all">
-                Get Started for Free
-                <ArrowRight className="text-on-primary text-lg" />
-              </button>
-              <button className="bg-surface border border-outline-variant text-on-surface px-xl py-md rounded-lg font-headline-md hover:bg-surface-container-low transition-all">
-                View Demo
-              </button>
+              <Link href="/register">
+                <button className="bg-primary text-on-primary px-xl py-md rounded-lg font-headline-md flex items-center justify-center gap-sm hover:opacity-90 transition-all">
+                  Get Started for Free
+                  <ArrowRight className="text-on-primary text-lg" />
+                </button>
+              </Link>
+              <a href="#features">
+                <button className="bg-surface border border-outline-variant text-on-surface px-xl py-md rounded-lg font-headline-md hover:bg-surface-container-low transition-all">
+                  Learn More
+                </button>
+              </a>
             </div>
           </div>
           <div className="relative mt-12 lg:mt-0">
@@ -170,17 +179,21 @@ export default function Home() {
               Join over 50,000 patients who trust MedTracker to manage their treatment plans with confidence and ease.
             </p>
             <div className="flex flex-col sm:flex-row gap-md justify-center">
-              <button className="bg-primary text-on-primary px-xl py-md rounded-lg font-headline-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
-                Sign Up Today
-                <UserPlus className="text-on-primary text-lg" />
-              </button>
-              <button className="bg-secondary text-on-secondary px-xl py-md rounded-lg font-headline-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
-                <CheckCircle className="text-on-secondary text-lg" />
-                Mark as Taken
-              </button>
+              <Link href="/register">
+                <button className="bg-primary text-on-primary px-xl py-md rounded-lg font-headline-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
+                  Sign Up Today
+                  <UserPlus className="text-on-primary text-lg" />
+                </button>
+              </Link>
+              <Link href="/login">
+                <button className="bg-secondary text-on-secondary px-xl py-md rounded-lg font-headline-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
+                  <CheckCircle className="text-on-secondary text-lg" />
+                  Mark as Taken
+                </button>
+              </Link>
             </div>
           </div>
-        </div>
+        </div>  
       </section>
 
       {/* Footer */}
